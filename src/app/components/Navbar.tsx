@@ -10,7 +10,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full border-none bg-blue-950 backdrop-blur-xl sticky top-0 z-50">
+    <nav className="w-full border-none bg-blue-950 backdrop-blur-xl top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="bg-gradient-to-t from-[#FFFFFF] to-[#7C3AED]  bg-clip-text text-transparent text-2xl font-bold tracking-wider hover:opacity-80 transition-opacity">
