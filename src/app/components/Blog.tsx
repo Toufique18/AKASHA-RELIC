@@ -1,8 +1,8 @@
 import React from 'react';
 import BlogCard from './BlogCard';
-export default function Blog() {
 
-    const posts = [
+export default function Blog() {
+  const posts = [
     {
       id: 1,
       title: "Morem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -25,10 +25,12 @@ export default function Blog() {
       variant: "standard" as const
     }
   ];
-    return (
-    <section id="blog" className="py-20 px-6 sm:px-12 lg:px-24 bg-[#11072B]">
+  
+  return (
+    <section id="blog" className="lg:py-20 py-10 px-6 sm:px-12 lg:px-24 bg-[#11072B]">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Grid with auto rows and items-stretch */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:auto-rows-fr lg:items-stretch">
           
           {/* Featured Post - Left Column */}
           <div className="lg:col-span-5">
@@ -36,9 +38,10 @@ export default function Blog() {
               title={posts[0].title}
               description={posts[0].description}
               image={posts[0].image}
-              variant="featured"
+              variant={posts[0].variant}
             />
           </div>
+          
           {/* Right Column */}
           <div className="lg:col-span-7 flex flex-col gap-8">
             
@@ -56,15 +59,16 @@ export default function Blog() {
                 <span className="text-xl">→</span>
               </button>
             </div>
-            {/* Smaller Posts Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            {/* Smaller Posts Grid - will stretch to fill remaining space */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
               {posts.slice(1).map((post) => (
-                <div key={post.id}>
+                <div key={post.id} className="h-full">
                   <BlogCard 
                     title={post.title}
                     description={post.description}
                     image={post.image}
-                    variant="standard"
+                    variant={post.variant}
                   />
                 </div>
               ))}
@@ -74,5 +78,4 @@ export default function Blog() {
       </div>
     </section>
   );
-    
 }

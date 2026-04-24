@@ -1,17 +1,17 @@
 export default function Subscribe() {
   return (
-    <section className="relative w-full py-20 px-6 sm:px-12 lg:px-24">
-      <div className="relative max-w-7xl mx-auto">
+    <section className="relative w-full lg:py-20 py-10 px-6 sm:px-12 lg:px-24 bg-[#11072B]">
+      <div className="relative max-w-7xl mx-auto ">
         {/* Background image container */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-3xl overflow-hidden"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-3xl overflow-hidden bg-white/10 backdrop-blur-2xl border border-white/10"
           style={{
             backgroundImage: "url('/780679c900172119c0ee452424f211b5c32fbfcb.png')",
           }}
         />
         
         
-        <div className="relative z-10 flex items-center justify-center min-h-[500px] px-4 py-20">
+        <div className="relative z-10 flex items-center justify-center  px-4 py-20">
           
           <div className="max-w-2xl w-full mx-auto">
             <div className="text-center">

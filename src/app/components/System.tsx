@@ -77,7 +77,7 @@ const systems = [
 
 export default function System() {
   return (
-    <section className="py-24 px-6 sm:px-12 lg:px-24 relative overflow-hidden">
+    <section className="lg:py-20 py-10 px-6 sm:px-12 lg:px-24 relative overflow-hidden bg-[#11072B]">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 inline-block">
@@ -90,9 +90,9 @@ export default function System() {
           {systems.map((system, index) => (
             <div 
               key={index}
-              className={`p-8 rounded-2xl border transition-all duration-300 group bg-[#11072B] border-white/10 hover:border-blue-500 hover:bg-blue/10`}
+              className={`p-8 rounded-2xl transition-all duration-300 group bg-white/10 backdrop-blur-2xl border border-white/10 hover:border-blue-500 hover:bg-blue/10`}
             >
-              <div className="w-12 h-12 rounded-xl bg-[#372E4C] backdrop-blur-md flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 rounded-xl bg-white/5 backdrop-blur-xl border border-white/5  flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform duration-300">
                 {system.icon}
               </div>
             

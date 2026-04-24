@@ -38,7 +38,7 @@ const chronicleItems = [
 
 export default function Chronicles() {
   return (
-    <section className="py-24 px-6 sm:px-12 lg:px-24 relative overflow-hidden">
+    <section className="lg:py-20 py-10 px-6 sm:px-12 lg:px-24 relative overflow-hidden bg-[#11072B]">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 items-center">
         {/* Left Side: Text and Menu */}
         <div className="flex flex-col space-y-8">

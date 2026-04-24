@@ -1,24 +1,30 @@
 export default function Manifesto() {
   return (
-    <section className="py-10 px-6 sm:px-12 lg:px-24 relative overflow-hidden  ">
+    <section className="py-10 px-6 sm:px-12 lg:px-24 relative overflow-hidden bg-[#11072B]  ">
 
 
-        <div className="relative flex flex-col items-center justify-center px-6  md:px-16 lg:px-24 ">
+        <div className="relative flex flex-col items-center  px-6  md:px-16 lg:px-24 ">
         
         {/* Main heading with glitch effect */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-3">
           <h5 className="text-2xl sm:text-7xl md:text-2xl font-semibold tracking-wider">
             ENGINEERED FOR ETERNITY
           </h5>
           
-          <div className="mt-6 inline-block text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+          <div className="mt-3 inline-block text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
             THE CORE ARCHITECTURE
             
           </div>
         </div>
         
-        {/* Tech stack icons - First row */}
-        <div className="flex flex-wrap justify-center justify-between">
+       
+        
+        {/* Forging New Realities section */}
+        
+      </div>
+
+       {/* Tech stack icons - First row */}
+        <div className="flex flex-wrap max-w-7xl mx-auto justify-between mb-6">
   {[
     { name: "SWIFT", icon: "swift" },
     { name: "REDUX", icon: "redux" },
@@ -28,7 +34,7 @@ export default function Manifesto() {
   ].map((tech, index) => (
     <div
       key={index}
-      className="px-6 py-3 cursor-pointer group flex justify-between items-center gap-2"
+      className="px-6 py-3 cursor-pointer group flex items-center gap-2"
     >
       {/* Swift Logo */}
       {tech.icon === "swift" && (
@@ -101,42 +107,25 @@ export default function Manifesto() {
         </svg>
       )}
 
-      <span className="text-purple-300 font-mono text-sm sm:text-base tracking-wide group-hover:text-purple-200 transition">
+      <span className="text-purple-300 font-mono font-semibold text-sm sm:text-base tracking-wide group-hover:text-purple-200 transition">
         {tech.name}
       </span>
     </div>
   ))}
-</div>
-        
-        {/* Forging New Realities section */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-fuchsia-300 mb-4">
-           
-          </h2>
-          
-          {/* Description text with glass card */}
-          <div className="max-w-3xl mx-auto">
-            <div className="p-6 rounded-2xl bg-purple-600/5 backdrop-blur-md border border-purple-400/10">
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
       {/* Background image placeholder - replace with your actual image */}
 
       <div className="relative max-w-7xl mx-auto">
         {/* Background image container */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-3xl overflow-hidden"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden bg-white/10 backdrop-blur-2xl border border-white/10"
           style={{
             backgroundImage: "url('/82fa092c6c3035951b384add4c40d052841f39eb.png')",
           }}
         />
         
         
-        <div className="relative z-10 flex items-center justify-center min-h-[500px] px-4 py-20">
+        <div className="relative z-10 flex items-center justify-center px-4 py-20">
           
           <div className="max-w-2xl w-full mx-auto">
             <div className="text-center">
@@ -152,7 +141,7 @@ export default function Manifesto() {
               </p>
               
               <div className="mb-6 max-w-md mx-auto">
-                <button className="group relative px-8 py-4 rounded-2xl bg-purple-600/10 backdrop-blur-lg border border-purple-500/20 shadow-[0_8px_32px_rgba(147,51,234,0.2)]hover:bg-purple-600/20 hover:border-purple-500/30 hover:shadow-[0_8px_32px_rgba(147,51,234,0.3)]transition-all duration-300 cursor-pointer group">
+                <button className="group relative px-8 py-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/10 shadow-[0_8px_32px_rgba(147,51,234,0.2)]hover:bg-purple-600/20 hover:border-purple-500/30 hover:shadow-[0_8px_32px_rgba(147,51,234,0.3)]transition-all duration-300 cursor-pointer group">
             <span className="text-white font-bold text-lg tracking-wider relative z-10">
               WATCH MANIFESTO
             </span>

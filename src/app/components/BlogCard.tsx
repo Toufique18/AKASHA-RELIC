@@ -11,14 +11,14 @@ export default function BlogCard({ title, description, image, variant = 'standar
   const isFeatured = variant === 'featured';
   
   return (
-    <div className={`group bg-[#1a113d]/50 backdrop-blur-md border border-white/10 rounded-[2rem] overflow-hidden p-4 sm:p-6 h-full flex flex-col transition-all duration-300 hover:border-purple-500/30 hover:shadow-[0_8px_32px_rgba(147,51,234,0.1)]`}>
-      <div className={`relative ${isFeatured ? 'aspect-[4/5]' : 'aspect-video'} rounded-3xl overflow-hidden mb-6 bg-gradient-to-br from-purple-500/20 to-pink-500/20`}>
+    <div className={`group bg-white/10 backdrop-blur-md border border-white/10 rounded-[2rem] overflow-hidden p-4 sm:p-6 h-full flex flex-col transition-all duration-300 hover:border-purple-500/30 hover:shadow-[0_8px_32px_rgba(147,51,234,0.1)]`}>
+      <div className={`relative ${isFeatured ? 'aspect-[5/5]' : 'aspect-[5/5]'} rounded-3xl overflow-hidden mb-6 bg-gradient-to-br from-purple-500/20 to-pink-500/20`}>
         {/* Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" 
           style={{ backgroundImage: `url('${image}')` }} 
         />
-        {/* Overlay for better text contrast if needed, or just for aesthetic */}
+        {/* Overlay for better text contrast */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#11072B]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
       
@@ -26,7 +26,8 @@ export default function BlogCard({ title, description, image, variant = 'standar
         {title}
       </h3>
       
-      <p className={`text-gray-400 ${isFeatured ? 'text-sm sm:text-base' : 'text-xs sm:text-sm'} leading-relaxed flex-grow line-clamp-4`}>
+      {/* Fixed: Show ALL content, no line-clamp, natural height */}
+      <p className={`text-gray-400 ${isFeatured ? 'text-sm sm:text-base' : 'text-xs sm:text-sm'} leading-relaxed `}>
         {description}
       </p>
     </div>
