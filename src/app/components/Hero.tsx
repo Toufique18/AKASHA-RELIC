@@ -21,7 +21,7 @@ export default function Hero() {
             World
           </h1>
           
-          <p className="text-lg sm:text-xl text-gray-400 max-w-xl leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-500 max-w-xl leading-relaxed">
             Dissolving the boundaries between physical existence and eternal digital presence. 
             Bridge dimensions through sentient relic technology.
           </p>
