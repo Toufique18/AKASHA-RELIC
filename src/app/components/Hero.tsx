@@ -42,7 +42,7 @@ export default function Hero() {
             <img 
               src="/young-woman.png" 
               alt="People in VR" 
-              className="w-[716px] lg:h-[816px]"
+              className="w-[715px] lg:h-[815px]"
             />
           </div>
         </div>
